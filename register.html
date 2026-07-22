@@ -316,33 +316,7 @@ font-weight:700;
 
 }
 
-.strength{
 
-margin-top:8px;
-
-font-size:13px;
-
-font-weight:600;
-
-}
-
-.weak{
-
-color:#e53935;
-
-}
-
-.medium{
-
-color:#ff9800;
-
-}
-
-.strong{
-
-color:#00a651;
-
-}
 
 @media(max-width:700px){
 
@@ -515,10 +489,7 @@ onclick="togglePassword('password',this)"></i>
 
 </div>
 
-<div
-id="strength"
-class="strength">
-</div>
+
 
 </div>
 
@@ -648,44 +619,6 @@ icon.classList.add("fa-eye");
 }
 
 // Password Strength Checker
-
-const passwordInput =
-document.getElementById("password");
-
-const strength =
-document.getElementById("strength");
-
-passwordInput.addEventListener("input",function(){
-
-const password = this.value;
-
-if(password.length < 6){
-
-strength.innerHTML =
-"Weak Password";
-
-strength.className =
-"strength weak";
-
-}else if(password.length < 10){
-
-strength.innerHTML =
-"Medium Password";
-
-strength.className =
-"strength medium";
-
-}else{
-
-strength.innerHTML =
-"Strong Password";
-
-strength.className =
-"strength strong";
-
-}
-
-});
 
 // Register User
 
